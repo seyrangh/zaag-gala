@@ -1,0 +1,53 @@
+{
+  "id": "event_details",
+  "type": "SharedSlice",
+  "name": "EventDetails",
+  "description": "EventDetails",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "heading": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Heading",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "heading2,em"
+          }
+        },
+        "body": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Body",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "paragraph"
+          }
+        },
+        "info": {
+          "type": "Group",
+          "config": {
+            "label": "info",
+            "repeat": true,
+            "fields": {
+              "eventdetails": {
+                "type": "Link",
+                "config": {
+                  "label": "EventDetails",
+                  "select": "document"
+                }
+              }
+            }
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}
